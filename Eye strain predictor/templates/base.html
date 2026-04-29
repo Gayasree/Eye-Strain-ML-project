@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Eye Strain Predictor{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a class="brand" href="/">&#128065; Eye Strain Predictor</a>
+    <ul>
+        <li><a href="/" {% if request.endpoint=='home' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="/predict" {% if request.endpoint=='predict' %}class="active"{% endif %}>Predict</a></li>
+        <li><a href="/prevention" {% if request.endpoint=='prevention' %}class="active"{% endif %}>Prevention</a></li>
+        <li><a href="/model-info" {% if request.endpoint in ['model_info','admin_login'] %}class="active"{% endif %}>Model Info</a></li>
+        {% if session.get('admin_logged_in') %}
+        <li><a href="/admin-logout" style="color:#fed7d7;">&#128274; Logout</a></li>
+        {% endif %}
+        <li><a href="/about" {% if request.endpoint=='about' %}class="active"{% endif %}>About</a></li>
+        <li><a href="/contact" {% if request.endpoint=='contact' %}class="active"{% endif %}>Contact</a></li>
+    </ul>
+</nav>
+
+{% block content %}{% endblock %}
+
+<footer>
+    &copy; 2025 Digital Eye Strain Risk Prediction &mdash; Built with Python &amp; Flask
+</footer>
+
+</body>
+</html>

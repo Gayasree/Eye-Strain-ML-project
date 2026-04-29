@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Predict - Eye Strain Predictor{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h1 class="page-title">&#128203; Eye Strain Risk Prediction</h1>
+        <p class="page-subtitle">Fill in your details below to assess your digital eye strain risk.</p>
+
+        {% if error %}
+        <div class="error-msg">&#9888; {{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/predict" novalidate>
+
+            <div class="form-grid">
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="5" max="100"
+                           placeholder="e.g. 25" required
+                           value="{{ form_data.age if form_data else '' }}">
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled {% if not form_data %}selected{% endif %}>Select gender</option>
+                        <option value="Male"   {% if form_data and form_data.gender=='Male'   %}selected{% endif %}>Male</option>
+                        <option value="Female" {% if form_data and form_data.gender=='Female' %}selected{% endif %}>Female</option>
+                    </select>
+                </div>
+
+                <!-- Daily Screen Time -->
+                <div class="form-group">
+                    <label for="screen_time">Daily Screen Time (hours)</label>
+                    <input type="number" id="screen_time" name="screen_time" min="0" max="24" step="0.1"
+                           placeholder="e.g. 8.5" required
+                           value="{{ form_data.screen_time if form_data else '' }}">
+                </div>
+
+                <!-- Primary Device -->
+                <div class="form-group">
+                    <label for="device">Primary Device</label>
+                    <select id="device" name="device" required>
+                        <option value="" disabled {% if not form_data %}selected{% endif %}>Select device</option>
+                        <option value="Laptop" {% if form_data and form_data.device=='Laptop' %}selected{% endif %}>Laptop</option>
+                        <option value="Mobile" {% if form_data and form_data.device=='Mobile' %}selected{% endif %}>Mobile</option>
+                        <option value="Tablet" {% if form_data and form_data.device=='Tablet' %}selected{% endif %}>Tablet</option>
+                    </select>
+                </div>
+
+                <!-- Screen Brightness -->
+                <div class="form-group">
+                    <label for="brightness">Screen Brightness</label>
+                    <select id="brightness" name="brightness" required>
+                        <option value="" disabled {% if not form_data %}selected{% endif %}>Select brightness</option>
+                        <option value="Low"    {% if form_data and form_data.brightness=='Low'    %}selected{% endif %}>Low</option>
+                        <option value="Medium" {% if form_data and form_data.brightness=='Medium' %}selected{% endif %}>Medium</option>
+                        <option value="High"   {% if form_data and form_data.brightness=='High'   %}selected{% endif %}>High</option>
+                    </select>
+                </div>
+
+                <!-- Break Frequency -->
+                <div class="form-group">
+                    <label for="break_freq">Break Frequency</label>
+                    <select id="break_freq" name="break_freq" required>
+                        <option value="" disabled {% if not form_data %}selected{% endif %}>Select frequency</option>
+                        <option value="Frequent"  {% if form_data and form_data.break_freq=='Frequent'  %}selected{% endif %}>Frequent</option>
+                        <option value="Sometimes" {% if form_data and form_data.break_freq=='Sometimes' %}selected{% endif %}>Sometimes</option>
+                        <option value="Rare"      {% if form_data and form_data.break_freq=='Rare'      %}selected{% endif %}>Rare</option>
+                    </select>
+                </div>
+
+                <!-- Sleep Hours -->
+                <div class="form-group">
+                    <label for="sleep_hours">Sleep Hours per Night</label>
+                    <input type="number" id="sleep_hours" name="sleep_hours" min="1" max="12" step="0.1"
+                           placeholder="e.g. 7.5" required
+                           value="{{ form_data.sleep_hours if form_data else '' }}">
+                </div>
+
+                <!-- Blue Light Filter -->
+                <div class="form-group">
+                    <label for="blue_light">Blue Light Filter</label>
+                    <select id="blue_light" name="blue_light" required>
+                        <option value="" disabled {% if not form_data %}selected{% endif %}>Select option</option>
+                        <option value="Yes" {% if form_data and form_data.blue_light=='Yes' %}selected{% endif %}>Yes</option>
+                        <option value="No"  {% if form_data and form_data.blue_light=='No'  %}selected{% endif %}>No</option>
+                    </select>
+                </div>
+
+                <!-- Eye Symptoms -->
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <label for="symptom">Current Eye Symptom</label>
+                    <select id="symptom" name="symptom" required>
+                        <option value="" disabled {% if not form_data %}selected{% endif %}>Select symptom</option>
+                        <option value="None"           {% if form_data and form_data.symptom=='None'           %}selected{% endif %}>None</option>
+                        <option value="Dry Eyes"       {% if form_data and form_data.symptom=='Dry Eyes'       %}selected{% endif %}>Dry Eyes</option>
+                        <option value="Headache"       {% if form_data and form_data.symptom=='Headache'       %}selected{% endif %}>Headache</option>
+                        <option value="Blurred Vision" {% if form_data and form_data.symptom=='Blurred Vision' %}selected{% endif %}>Blurred Vision</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-submit">&#128269; Predict My Risk</button>
+        </form>
+    </div>
+</div>
+
+<script>
+// Basic client-side validation
+document.querySelector("form").addEventListener("submit", function(e) {
+    const age = parseFloat(document.getElementById("age").value);
+    const st  = parseFloat(document.getElementById("screen_time").value);
+    const sl  = parseFloat(document.getElementById("sleep_hours").value);
+    if (isNaN(age) || age < 5 || age > 100) {
+        alert("Please enter a valid age between 5 and 100."); e.preventDefault(); return;
+    }
+    if (isNaN(st) || st < 0 || st > 24) {
+        alert("Screen time must be between 0 and 24 hours."); e.preventDefault(); return;
+    }
+    if (isNaN(sl) || sl < 1 || sl > 12) {
+        alert("Sleep hours must be between 1 and 12."); e.preventDefault(); return;
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Result - Eye Strain Predictor{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card" style="text-align:center;">
+        <h1 class="page-title">&#128269; Prediction Result</h1>
+        <p class="page-subtitle">Based on your inputs, here is your eye strain risk assessment.</p>
+
+        <div class="risk-badge risk-{{ risk_level }}">
+            {% if risk_level == 0 %}&#9989;{% elif risk_level == 1 %}&#9888;{% else %}&#128680;{% endif %}
+            {{ risk }}
+        </div>
+
+        <p style="color:#718096; margin-top:0.5rem; font-size:0.9rem;">
+            {% if risk_level == 0 %}
+                Your screen habits are healthy. Keep it up!
+            {% elif risk_level == 1 %}
+                You have moderate risk. Some adjustments are recommended.
+            {% else %}
+                You have high risk. Please take immediate action.
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="card">
+        <h2 style="font-size:1.2rem; color:#1a365d; margin-bottom:1rem;">&#128161; Recommendations</h2>
+        <ul class="tips-list">
+            {% for tip in tips %}
+            <li>{{ tip }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="/predict" class="btn btn-secondary">&#8592; Try Again</a>
+        <a href="/prevention" class="btn btn-primary" style="background:#ebf8ff; color:#1a365d;">View All Prevention Tips</a>
+    </div>
+</div>
+{% endblock %}

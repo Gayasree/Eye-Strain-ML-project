@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Model Info - Eye Strain Predictor{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.75rem;">
+            <div>
+                <h1 class="page-title">&#129302; Model Information</h1>
+                <p class="page-subtitle">Details about the machine learning models used in this project.</p>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span class="admin-badge">&#128274; Admin View</span>
+                <a href="/admin-logout" class="btn" style="background:#fed7d7; color:#742a2a; padding:0.4rem 1rem; font-size:0.85rem;">Logout</a>
+            </div>
+        </div>
+
+        <p style="margin-bottom:1rem;">
+            <strong>Active Model:</strong>
+            <span class="badge-best">{{ model_name }}</span>
+        </p>
+
+        <h3 style="color:#1a365d; margin-bottom:0.5rem; font-size:1rem;">Model Accuracy Comparison</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>Implementation</th>
+                    <th>Test Accuracy</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for name, acc in accuracies.items() %}
+                <tr>
+                    <td><strong>{{ name }}</strong></td>
+                    <td>Manual (from scratch)</td>
+                    <td>{{ acc }}</td>
+                    <td>
+                        {% if name == model_name %}
+                        <span class="badge-best">&#9733; Best Model</span>
+                        {% else %}
+                        &mdash;
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2 style="font-size:1.1rem; color:#1a365d; margin-bottom:1rem;">&#128203; Dataset Features</h2>
+        <table>
+            <thead><tr><th>Feature</th><th>Type</th><th>Values</th></tr></thead>
+            <tbody>
+                <tr><td>Age</td><td>Numerical</td><td>18 – 45</td></tr>
+                <tr><td>Gender</td><td>Categorical</td><td>Male, Female</td></tr>
+                <tr><td>Daily Screen Time (hrs)</td><td>Numerical</td><td>0 – 10</td></tr>
+                <tr><td>Primary Device</td><td>Categorical</td><td>Laptop, Mobile, Tablet</td></tr>
+                <tr><td>Screen Brightness</td><td>Categorical</td><td>Low, Medium, High</td></tr>
+                <tr><td>Break Frequency</td><td>Categorical</td><td>Frequent, Sometimes, Rare</td></tr>
+                <tr><td>Sleep Hours</td><td>Numerical</td><td>4 – 9</td></tr>
+                <tr><td>Blue Light Filter</td><td>Categorical</td><td>Yes, No</td></tr>
+                <tr><td>Eye Symptom</td><td>Categorical</td><td>None, Dry Eyes, Headache, Blurred Vision</td></tr>
+                <tr><td><strong>Eye Strain Risk</strong> (target)</td><td>Categorical</td><td>Low, Medium, High</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2 style="font-size:1.1rem; color:#1a365d; margin-bottom:0.75rem;">&#9881; Algorithm Details</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="icon">&#127795;</div>
+                <h4>Decision Tree</h4>
+                <p>CART with Gini impurity. Max depth 6. Implemented from scratch.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">&#127795;&#127795;</div>
+                <h4>Random Forest</h4>
+                <p>15 bagged Decision Trees. Majority vote ensemble.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">&#128205;</div>
+                <h4>KNN (k=5)</h4>
+                <p>Euclidean distance, 5 nearest neighbors, majority vote.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">&#128200;</div>
+                <h4>Linear SVM</h4>
+                <p>One-vs-rest multiclass, SGD optimization, L2 regularization.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

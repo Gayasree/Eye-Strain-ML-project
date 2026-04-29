@@ -1,0 +1,201 @@
+Age,Gender,Daily_Screen_Time_Hours,Primary_Device,Screen_Brightness,Break_Frequency,Sleep_Hours,Blue_Light_Filter,Eye_Symptom,Eye_Strain_Risk
+41,Male,9.9,Tablet,Low,Rare,8.8,Yes,Headache,High
+34,Male,6.8,Laptop,High,Sometimes,5.6,Yes,Blurred Vision,Medium
+23,Male,8.3,Laptop,High,Rare,8.9,Yes,None,High
+22,Male,4.2,Mobile,Medium,Sometimes,5.9,No,Dry Eyes,Medium
+19,Female,7.8,Mobile,Low,Rare,6.3,No,Blurred Vision,High
+31,Female,4.2,Mobile,Low,Frequent,8.6,Yes,Dry Eyes,Medium
+38,Male,6.3,Laptop,Low,Frequent,6.8,Yes,Dry Eyes,Medium
+28,Female,6.2,Laptop,Medium,Rare,8.1,No,Dry Eyes,Medium
+42,Female,8.3,Mobile,High,Frequent,7,No,Dry Eyes,High
+36,Female,5.2,Mobile,Medium,Sometimes,7.2,Yes,Dry Eyes,Medium
+24,Male,2.5,Tablet,High,Frequent,8,Yes,None,Low
+41,Female,10,Mobile,Low,Sometimes,6.2,Yes,None,High
+31,Female,2.7,Laptop,Low,Rare,4.4,Yes,None,High
+19,Male,3,Tablet,Low,Sometimes,8.8,Yes,Headache,Low
+28,Male,5.7,Tablet,High,Frequent,5.2,No,None,Medium
+36,Female,6.9,Tablet,Medium,Rare,8.5,Yes,Headache,Medium
+19,Female,8.5,Tablet,Low,Sometimes,5.3,Yes,None,High
+24,Male,3.3,Mobile,High,Rare,8.9,No,Headache,Low
+30,Male,4.4,Tablet,High,Frequent,5,Yes,Blurred Vision,Medium
+44,Female,6,Laptop,Medium,Frequent,5.2,No,None,Medium
+41,Female,7.8,Mobile,Low,Rare,4.5,Yes,Dry Eyes,High
+25,Female,7.3,Tablet,Medium,Rare,4.2,No,Blurred Vision,High
+27,Male,7.4,Tablet,Medium,Frequent,5.6,Yes,Dry Eyes,High
+25,Female,2.4,Laptop,Medium,Sometimes,7.5,No,Headache,Low
+30,Female,6.9,Tablet,High,Rare,6.2,Yes,Dry Eyes,Medium
+25,Male,5.5,Mobile,Medium,Rare,4.6,No,None,High
+26,Female,9.5,Mobile,Medium,Sometimes,7.5,No,Dry Eyes,High
+28,Male,8.3,Laptop,Medium,Rare,5.8,Yes,Headache,High
+35,Male,10,Mobile,High,Sometimes,4.6,Yes,Headache,High
+35,Male,9.5,Tablet,Medium,Frequent,7.7,Yes,Headache,High
+42,Female,8.7,Tablet,High,Sometimes,5.3,Yes,Blurred Vision,High
+35,Female,9.6,Mobile,Medium,Rare,6.8,No,None,High
+44,Female,8.2,Mobile,High,Frequent,6.8,No,Blurred Vision,High
+29,Male,7.5,Laptop,Low,Sometimes,6.1,Yes,Dry Eyes,High
+19,Male,8.9,Mobile,High,Rare,5.3,No,None,High
+27,Male,4.6,Mobile,High,Sometimes,7.1,No,Blurred Vision,Medium
+21,Male,6,Laptop,Low,Sometimes,7.4,Yes,Headache,Medium
+40,Male,9.9,Laptop,Medium,Frequent,6.8,Yes,Blurred Vision,High
+31,Female,5.9,Tablet,Low,Frequent,8.8,Yes,None,Medium
+24,Male,3.4,Mobile,Low,Rare,5.8,No,Blurred Vision,High
+25,Female,6.4,Mobile,High,Rare,4.4,No,Dry Eyes,High
+19,Female,6.4,Laptop,Low,Rare,8.4,No,Dry Eyes,Medium
+25,Female,3.5,Tablet,Low,Frequent,6.7,No,Dry Eyes,Low
+28,Female,5.7,Mobile,Medium,Frequent,7.3,Yes,None,Medium
+36,Male,2.1,Laptop,Medium,Rare,7.5,No,Dry Eyes,Low
+23,Male,7.2,Mobile,Low,Rare,8.5,No,Dry Eyes,High
+40,Male,3.4,Laptop,Low,Rare,7.7,Yes,Dry Eyes,Low
+25,Male,9.6,Tablet,Medium,Rare,8.1,No,None,High
+43,Female,9.7,Laptop,Low,Frequent,6.2,Yes,Dry Eyes,High
+36,Male,2.7,Mobile,Low,Frequent,6.2,Yes,Blurred Vision,Low
+35,Male,5.5,Laptop,Low,Rare,7.6,No,Dry Eyes,Medium
+40,Male,9.8,Laptop,High,Rare,7.7,No,None,High
+25,Female,2,Tablet,Medium,Rare,4.4,Yes,Blurred Vision,High
+43,Male,2.5,Laptop,High,Rare,7.7,No,Dry Eyes,Low
+33,Female,3.8,Laptop,Low,Frequent,7.6,Yes,Dry Eyes,Low
+39,Male,5.5,Laptop,High,Sometimes,4.6,No,Blurred Vision,Medium
+45,Female,9.4,Mobile,Low,Sometimes,7.8,No,Dry Eyes,High
+27,Female,6.7,Mobile,Medium,Sometimes,5.4,No,Dry Eyes,Medium
+45,Male,5,Mobile,Low,Frequent,8.9,Yes,Dry Eyes,Medium
+21,Male,7.6,Mobile,Low,Rare,8,No,None,High
+29,Female,9.8,Mobile,High,Rare,8,No,Blurred Vision,High
+31,Female,4.6,Laptop,Low,Frequent,6.4,No,Dry Eyes,Medium
+39,Female,7.5,Mobile,Medium,Sometimes,7,No,Dry Eyes,High
+27,Male,7,Mobile,Low,Frequent,5.6,Yes,Dry Eyes,Medium
+28,Male,9,Mobile,Medium,Sometimes,4.8,Yes,Blurred Vision,High
+42,Male,7.3,Mobile,High,Frequent,6.2,Yes,None,High
+33,Female,4.4,Laptop,Low,Sometimes,5.1,Yes,Blurred Vision,Medium
+40,Female,9.4,Laptop,High,Rare,6.3,No,Dry Eyes,High
+19,Male,3.3,Mobile,High,Sometimes,7.5,No,None,Low
+18,Male,4.8,Laptop,Medium,Frequent,7.1,No,Headache,Medium
+23,Female,9.7,Tablet,Low,Frequent,6.7,No,Dry Eyes,High
+34,Female,7.1,Tablet,Medium,Sometimes,6.4,No,None,High
+42,Female,3.6,Mobile,Low,Sometimes,6.3,No,Blurred Vision,Low
+34,Female,9.1,Mobile,Low,Sometimes,6.5,No,Dry Eyes,High
+35,Male,4.4,Tablet,High,Rare,4.8,Yes,None,High
+41,Male,5,Laptop,Low,Sometimes,5.8,No,Blurred Vision,Medium
+45,Male,7.5,Mobile,Low,Sometimes,5.4,No,None,High
+19,Male,9.4,Laptop,Medium,Sometimes,6.2,Yes,Dry Eyes,High
+23,Male,9.8,Tablet,Medium,Sometimes,7.5,No,None,High
+29,Female,5.8,Tablet,Medium,Rare,5.7,Yes,Blurred Vision,High
+39,Male,4.1,Laptop,High,Frequent,8.6,Yes,Dry Eyes,Medium
+27,Female,3.8,Mobile,Medium,Rare,6.3,No,Headache,Low
+45,Male,7.8,Mobile,Low,Frequent,4.3,No,None,High
+26,Male,6.2,Laptop,High,Frequent,4.2,Yes,Dry Eyes,Medium
+25,Female,7.5,Mobile,High,Frequent,5.5,No,Dry Eyes,High
+36,Female,8.9,Laptop,High,Rare,6.1,Yes,Headache,High
+26,Male,7.2,Mobile,High,Rare,8.2,No,Headache,High
+45,Female,8,Tablet,Low,Rare,5.1,Yes,Blurred Vision,High
+24,Male,6.7,Mobile,Medium,Rare,4.7,Yes,Blurred Vision,High
+33,Male,3.1,Tablet,Low,Frequent,4.3,Yes,Headache,Low
+40,Male,8.5,Tablet,High,Frequent,7.7,No,Headache,High
+22,Male,9,Mobile,High,Frequent,4,Yes,Dry Eyes,High
+34,Female,9.3,Laptop,Low,Frequent,6.8,No,Headache,High
+21,Female,6.3,Mobile,Low,Frequent,6,No,Blurred Vision,Medium
+18,Female,4.5,Mobile,Medium,Rare,8.6,Yes,None,Medium
+18,Male,4.9,Mobile,High,Frequent,6.9,Yes,Blurred Vision,Medium
+45,Female,3.9,Laptop,High,Rare,8.4,No,None,Low
+23,Male,4.3,Tablet,High,Frequent,7,No,Dry Eyes,Medium
+35,Male,2.3,Mobile,Medium,Sometimes,4.4,Yes,Dry Eyes,Low
+24,Female,10,Laptop,High,Frequent,7.4,No,Headache,High
+44,Male,5.1,Tablet,Medium,Rare,4.8,No,None,High
+18,Male,9.8,Tablet,Medium,Frequent,7.4,No,None,High
+45,Male,9.8,Tablet,Medium,Rare,7.6,Yes,None,High
+36,Female,3.7,Laptop,Low,Sometimes,4.7,Yes,None,Low
+35,Female,4.3,Tablet,Medium,Rare,8.3,No,None,Medium
+31,Male,3.7,Tablet,Low,Rare,8.7,Yes,Dry Eyes,Low
+23,Female,3.8,Tablet,Low,Rare,4.8,Yes,Blurred Vision,High
+25,Female,6,Mobile,Medium,Frequent,4.1,Yes,Dry Eyes,Medium
+34,Female,5.7,Tablet,High,Rare,5.4,Yes,None,High
+26,Male,6.5,Mobile,High,Sometimes,4.8,No,None,Medium
+24,Male,9.6,Laptop,Low,Frequent,8.1,No,Dry Eyes,High
+44,Male,5.3,Laptop,High,Sometimes,4.6,Yes,Dry Eyes,Medium
+41,Female,2.2,Tablet,High,Sometimes,5,No,Headache,Low
+21,Female,9.5,Laptop,High,Rare,4.8,Yes,Headache,High
+20,Female,3.4,Tablet,Low,Rare,7.2,No,None,Low
+29,Male,5.6,Mobile,Low,Frequent,5.3,No,Dry Eyes,Medium
+43,Female,5.6,Mobile,Medium,Rare,7.4,No,Dry Eyes,Medium
+39,Female,4.9,Mobile,High,Sometimes,8.1,Yes,Headache,Medium
+22,Female,8.7,Laptop,Low,Rare,4.8,No,None,High
+40,Female,7.8,Mobile,Medium,Sometimes,5.2,Yes,Blurred Vision,High
+21,Female,6.4,Laptop,Medium,Rare,8.8,Yes,Blurred Vision,Medium
+39,Female,8.4,Laptop,Medium,Sometimes,9,Yes,Headache,High
+36,Male,9,Tablet,Medium,Frequent,8.3,Yes,None,High
+42,Female,5.9,Laptop,Medium,Sometimes,5.8,Yes,Headache,Medium
+25,Female,3.9,Laptop,Medium,Rare,5.7,Yes,Headache,High
+26,Male,7.2,Mobile,Medium,Frequent,5.9,No,Headache,High
+19,Male,3.3,Mobile,High,Rare,4.9,No,Blurred Vision,High
+21,Female,5.9,Laptop,High,Frequent,4.7,Yes,None,Medium
+26,Female,5.9,Tablet,Medium,Frequent,5.3,No,Headache,Medium
+24,Female,3.7,Laptop,Medium,Sometimes,5.9,No,Blurred Vision,Low
+24,Male,9.3,Mobile,High,Frequent,7.8,Yes,None,High
+35,Female,2.1,Tablet,High,Rare,4.1,Yes,Headache,High
+42,Female,8.4,Laptop,Low,Frequent,8.4,No,None,High
+32,Male,3.6,Tablet,Low,Rare,8,No,Headache,Low
+30,Male,5.6,Mobile,High,Frequent,7.5,Yes,Dry Eyes,Medium
+22,Male,6.9,Laptop,Low,Sometimes,8.2,No,Dry Eyes,Medium
+33,Female,7.1,Mobile,Medium,Frequent,5.1,No,Blurred Vision,High
+37,Male,3.7,Laptop,Medium,Rare,6.9,No,Dry Eyes,Low
+34,Female,9.1,Tablet,High,Frequent,4.9,Yes,None,High
+39,Male,6.2,Tablet,Low,Sometimes,6.4,Yes,Dry Eyes,Medium
+45,Female,6.5,Laptop,High,Sometimes,5.5,No,Blurred Vision,Medium
+18,Female,4.1,Mobile,Low,Rare,5.7,Yes,None,High
+36,Female,4.6,Tablet,Medium,Sometimes,4.1,No,None,Medium
+31,Female,7.4,Tablet,Low,Rare,8.6,No,None,High
+23,Male,7.4,Tablet,High,Sometimes,8.2,Yes,Dry Eyes,High
+20,Female,4.5,Laptop,High,Frequent,8.9,Yes,Blurred Vision,Medium
+24,Female,6.8,Tablet,Medium,Frequent,7.8,No,None,Medium
+45,Male,5.7,Mobile,Medium,Frequent,7.8,Yes,Blurred Vision,Medium
+37,Female,8.5,Tablet,Low,Sometimes,5.4,Yes,None,High
+38,Male,8.4,Mobile,Low,Sometimes,4.7,No,Dry Eyes,High
+22,Male,9.8,Laptop,High,Sometimes,6.4,No,Headache,High
+44,Male,4.9,Tablet,High,Rare,4.1,Yes,Blurred Vision,High
+37,Male,4.1,Laptop,High,Sometimes,6.2,Yes,Dry Eyes,Medium
+30,Female,7.9,Mobile,Low,Frequent,7.3,No,None,High
+21,Female,3.7,Tablet,Low,Sometimes,5.8,Yes,Headache,Low
+35,Male,2.8,Mobile,Low,Frequent,6,Yes,Blurred Vision,Low
+45,Female,3.1,Laptop,Medium,Rare,8.5,Yes,None,Low
+33,Male,3.2,Laptop,Low,Sometimes,8.3,No,Dry Eyes,Low
+20,Male,3.3,Laptop,Medium,Rare,8.1,Yes,Headache,Low
+30,Female,3.5,Mobile,Low,Sometimes,4.4,Yes,Blurred Vision,Low
+20,Female,2.6,Tablet,Medium,Frequent,5.8,Yes,Headache,Low
+20,Female,8.4,Mobile,High,Rare,8.8,Yes,Dry Eyes,High
+31,Female,7.6,Mobile,High,Sometimes,8.5,No,Headache,High
+41,Male,8,Laptop,Low,Frequent,6,Yes,Blurred Vision,High
+39,Male,3.4,Laptop,Medium,Frequent,6.3,No,Blurred Vision,Low
+39,Female,2.2,Mobile,Low,Rare,7.1,No,Blurred Vision,Low
+19,Male,9.1,Laptop,High,Rare,6.4,Yes,Headache,High
+29,Female,8.6,Tablet,Medium,Frequent,8.6,Yes,None,High
+24,Male,4.7,Mobile,Medium,Sometimes,9,Yes,Headache,Medium
+44,Female,8.1,Tablet,Medium,Rare,9,No,None,High
+23,Female,5,Tablet,Low,Sometimes,5.5,Yes,Dry Eyes,Medium
+37,Female,7.9,Tablet,Low,Frequent,8.7,Yes,Headache,High
+37,Male,2.1,Tablet,Medium,Sometimes,7.5,No,Blurred Vision,Low
+21,Female,2.8,Mobile,Medium,Frequent,7.3,Yes,Blurred Vision,Low
+33,Female,4.6,Laptop,Low,Frequent,8,No,None,Medium
+34,Female,9.5,Laptop,Medium,Sometimes,6.9,Yes,Headache,High
+35,Male,9.8,Laptop,Medium,Rare,8.8,No,Headache,High
+18,Female,9.9,Laptop,High,Frequent,5.1,No,None,High
+23,Male,5.4,Mobile,Medium,Rare,5.4,No,Headache,High
+29,Female,8.4,Tablet,Low,Frequent,5.8,Yes,None,High
+34,Female,3.4,Mobile,Low,Frequent,5,Yes,None,Low
+39,Male,4.2,Tablet,High,Frequent,7,Yes,Dry Eyes,Medium
+37,Male,6.6,Mobile,Medium,Rare,4.6,No,Headache,High
+25,Male,4.9,Mobile,High,Rare,6.6,Yes,Blurred Vision,Medium
+30,Female,7.2,Mobile,Low,Sometimes,8.9,No,Blurred Vision,High
+32,Male,5,Tablet,High,Frequent,6.2,No,None,Medium
+21,Male,10,Tablet,Medium,Frequent,4.1,Yes,Blurred Vision,High
+37,Male,2,Tablet,Medium,Rare,4.1,No,Blurred Vision,High
+29,Female,8.1,Laptop,Medium,Sometimes,7.6,Yes,Headache,High
+27,Male,4.1,Laptop,Low,Sometimes,5,No,None,Medium
+39,Female,2.4,Tablet,High,Rare,7.3,Yes,None,Low
+39,Male,9.2,Tablet,Medium,Sometimes,7.9,No,Dry Eyes,High
+31,Female,9.2,Laptop,Medium,Rare,6.2,No,Headache,High
+32,Male,8.3,Mobile,Medium,Frequent,5.4,Yes,Dry Eyes,High
+23,Female,3.8,Tablet,Medium,Sometimes,4.9,Yes,None,Low
+29,Female,3,Tablet,Low,Rare,4.8,No,None,High
+23,Female,6.3,Tablet,Medium,Frequent,4.2,Yes,Blurred Vision,Medium
+33,Male,2.7,Laptop,High,Sometimes,6.1,Yes,Blurred Vision,Low
+29,Male,8.4,Laptop,Medium,Sometimes,8.7,Yes,Headache,High
+39,Female,2.8,Mobile,High,Rare,7.8,Yes,Dry Eyes,Low

@@ -1,0 +1,320 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #2d3748;
+    min-height: 100vh;
+}
+
+/* ── Navbar ── */
+nav {
+    background: linear-gradient(135deg, #1a365d, #2b6cb0);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .brand {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+}
+
+nav ul li a {
+    color: #bee3f8;
+    text-decoration: none;
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+/* ── Page Container ── */
+.container {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ── Cards ── */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+/* ── Page Title ── */
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: #718096;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* ── Hero (Home) ── */
+.hero {
+    background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 60%, #4299e1 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 { font-size: 2.2rem; margin-bottom: 0.75rem; }
+.hero p  { font-size: 1.05rem; opacity: 0.9; margin-bottom: 1.75rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.18); }
+
+.btn-primary { background: #fff; color: #1a365d; }
+.btn-secondary { background: #2b6cb0; color: #fff; }
+.btn-submit {
+    background: linear-gradient(135deg, #2b6cb0, #4299e1);
+    color: #fff;
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+/* ── Feature Cards (Home) ── */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-top: 4px solid #4299e1;
+}
+
+.feature-card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.feature-card h3 { font-size: 1rem; color: #1a365d; margin-bottom: 0.3rem; }
+.feature-card p  { font-size: 0.85rem; color: #718096; }
+
+/* ── Form ── */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+@media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
+
+.form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+
+.form-group label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.6rem 0.85rem;
+    border: 1.5px solid #cbd5e0;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    background: #f7fafc;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus { border-color: #4299e1; background: #fff; }
+
+.form-group input:invalid { border-color: #fc8181; }
+
+.error-msg {
+    background: #fff5f5;
+    border: 1px solid #fc8181;
+    color: #c53030;
+    padding: 0.75rem 1rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ── Result Page ── */
+.risk-badge {
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.risk-0 { background: #c6f6d5; color: #22543d; }
+.risk-1 { background: #fefcbf; color: #744210; }
+.risk-2 { background: #fed7d7; color: #742a2a; }
+
+.tips-list { list-style: none; padding: 0; }
+.tips-list li {
+    padding: 0.6rem 0.75rem;
+    border-left: 4px solid #4299e1;
+    margin-bottom: 0.6rem;
+    background: #ebf8ff;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+}
+
+/* ── Model Info Table ── */
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem; }
+th { background: #ebf8ff; color: #1a365d; font-weight: 700; }
+tr:hover td { background: #f7fafc; }
+
+.badge-best {
+    background: #c6f6d5;
+    color: #22543d;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ── Prevention Tips ── */
+.tip-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f7fafc;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid #4299e1;
+}
+
+.tip-item .tip-icon { font-size: 1.5rem; flex-shrink: 0; }
+.tip-item h4 { font-size: 0.95rem; color: #1a365d; margin-bottom: 0.2rem; }
+.tip-item p  { font-size: 0.88rem; color: #718096; }
+
+/* ── About / Contact ── */
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+
+.info-card {
+    background: #ebf8ff;
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.info-card .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.info-card h4 { color: #1a365d; margin-bottom: 0.3rem; font-size: 0.95rem; }
+.info-card p  { color: #4a5568; font-size: 0.88rem; }
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #a0aec0;
+    font-size: 0.85rem;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 2rem;
+}
+
+/* ── Admin Login ── */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    width: 100%;
+    max-width: 420px;
+    border-top: 5px solid #2b6cb0;
+}
+
+.login-icon {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.password-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrap input {
+    width: 100%;
+    padding-right: 2.8rem;
+}
+
+.toggle-pw {
+    position: absolute;
+    right: 0.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #718096;
+    padding: 0;
+    line-height: 1;
+}
+
+.toggle-pw:hover { color: #2b6cb0; }
+
+/* ── Admin Badge (Model Info page) ── */
+.admin-badge {
+    background: #ebf8ff;
+    color: #2b6cb0;
+    border: 1.5px solid #bee3f8;
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+}

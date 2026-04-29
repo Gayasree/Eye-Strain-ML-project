@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Home - Eye Strain Predictor{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <div class="hero">
+        <h1>&#128065; Digital Eye Strain Risk Prediction</h1>
+        <p>Analyze your screen habits and get an instant assessment of your digital eye strain risk level.</p>
+        <a href="/predict" class="btn btn-primary">Start Prediction &rarr;</a>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="icon">&#129302;</div>
+            <h3>ML-Powered</h3>
+            <p>Provides accurate predictions to help you understand your eye health risk.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#9889;</div>
+            <h3>Instant Results</h3>
+            <p>Get your risk level and personalized tips in seconds.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#128203;</div>
+            <h3>9 Risk Factors</h3>
+            <p>Analyzes age, screen time, sleep, brightness, and more.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#128161;</div>
+            <h3>Smart Tips</h3>
+            <p>Tailored recommendations based on your specific risk level.</p>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top:1.5rem;">
+        <h2 class="page-title" style="font-size:1.3rem;">How It Works</h2>
+        <p class="page-subtitle">Three simple steps to understand your eye health risk.</p>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="icon">&#9312;</div>
+                <h4>Fill the Form</h4>
+                <p>Enter your screen habits and personal details on the Predict page.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">&#9313;</div>
+                <h4>AI Analysis</h4>
+                <p>Our trained model analyzes your inputs against learned patterns.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">&#9314;</div>
+                <h4>Get Results</h4>
+                <p>Receive your risk level (Low / Medium / High) with actionable tips.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
